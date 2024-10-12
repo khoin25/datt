@@ -6,7 +6,7 @@ export default function Cart() {
     return <div className="w-[80%] mx-auto py-4">
       <h1 className="text-[1.4rem] font-semibold py-3">Your cart items</h1>
     <table className="w-[100%] table-cart">
-  <thead className="w-[100%] bg-white text-black h-[3rem] text-center">
+  <thead className="w-[100%] bg-[#266bf9] text-white h-[3rem] text-center">
     <tr>
       <th>Image</th>
       <th>Product Name</th>
@@ -24,16 +24,16 @@ export default function Cart() {
       <td className="product-name"><a href="#">Modern Smart Phone</a></td>
       <td className="product-price-cart"><span className="amount">$60.00</span></td>
       <td className="product-quantity flex justify-center items-center h-[150px]">
-      <div className='text-[1rem] border border-white flex items-center w-[5.5rem] justify-between'>
-        <div className='border  text-[1rem] px-1 border-r-[white] py-1 cursor-pointer'>
+      <div className='text-[1rem] border border-black flex items-center w-[5.5rem] justify-between'>
+        <div className='border  text-[1rem] px-1 border-r-[black] py-1 cursor-pointer'>
           -
           </div>
         <input type="text" value={1} className="text-center focus:outline-none bg-transparent w-[100%] px-[.8rem] text-[.9rem]" min={1} max={100}/>
-        <div className='border text-[1rem] px-1 border-l-[white] py-1 cursor-pointer'>+</div>
+        <div className='border text-[1rem] px-1 border-l-[black] py-1 cursor-pointer'>+</div>
       </div>
   
       </td>
-      <td className="product-subtotal">$70.00</td>
+      <td className="product-subtotal text-red-500">$70.00</td>
       <td className="product-remove cursor-pointer ">
      <FontAwesomeIcon icon={faClose} className="w-4 h-4 m-auto"/>
       </td>
@@ -42,14 +42,14 @@ export default function Cart() {
   </tbody>
 </table>
 <div className="flex justify-between py-[1rem]">
-  <button className="py-[.4rem] px-[1.3rem] bg-white text-black text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">Continue Shopping</button>
+  <button className="py-[.4rem] px-[1.3rem] bg-white border border-[#266bf9] text-[#266bf9] text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">Continue Shopping</button>
   <div className="flex gap-[1rem]">
-    <button className="py-[.4rem] px-[1.3rem] bg-white text-black text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">Update Shopping Cart</button>
+    <button className="py-[.4rem] px-[1.3rem] border border-[#266bf9] text-[#266bf9] text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">Update Shopping Cart</button>
     <button className="py-[.4rem] px-[1.3rem] bg-[#266bf9] text-white text-[1rem] flex justify-center items-center transition-all hover:bg-[#0055ff] hover:text-white">Clear Shopping Cart</button>
   </div>
 </div>
 <div className="flex justify-between">
-<div className="cart-tax w-[30%] bg-white px-[1rem] py-[2rem] text-black">
+<div className="cart-tax w-[30%]  border border-[#266bf9] shadow-sm bg-white px-[2rem] py-[2rem] text-black">
   <div className="title-wrap">
     <h4 className="font-semibold mb-[1rem] text-[1rem]">Estimate Shipping And Tax</h4>
   </div>
@@ -90,7 +90,7 @@ export default function Cart() {
     </div>
   </div>
 </div>
-<div className="cart-tax w-[30%] h-[100%] bg-white px-[1rem] py-[2rem] text-black">
+<div className="cart-tax w-[30%]  border border-[#266bf9] shadow-sm h-[100%] bg-white px-[2rem] py-[2rem] text-black">
   <div className="discount-code-wrapper">
     <div className="title-wrap">
     <h4 className="font-semibold mb-[1rem] text-[1rem]">Use Coupon Code
@@ -107,7 +107,7 @@ export default function Cart() {
     </div>
   </div>
 </div>
-<div className="cart-tax w-[30%] h-[100%] bg-white px-[1rem] py-[2rem] text-black">
+<div className="cart-tax w-[30%]  border border-[#266bf9] shadow-sm h-[100%] bg-white px-[2rem] py-[2rem] text-black">
   <div className="title-wrap">
     <h4 className="font-semibold  text-[1rem]">Cart Total</h4>
   </div>
