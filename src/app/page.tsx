@@ -1,3 +1,5 @@
+'use client'
+import Link from "next/link";
 // import Link from "next/link";
 // import classNames from "classnames/bind";
 
