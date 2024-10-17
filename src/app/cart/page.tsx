@@ -4,13 +4,14 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 export default function Cart() {
   return (
-    <div className="2xl:w-[80%] mx-auto py-4 sm:w-[95%] md:-[90%]">
+    <div className="2xl:w-[80%] mx-auto py-4 sxm:w-[95%] md:-[90%]">
       <h1 className="text-[1.4rem] font-semibold py-3">Your cart items</h1>
       <div className=" xl:flex justify-between">
         {/* Cart Items Table */}
         <div className="2xl:w-[70%] xl:w-[63%]">
           {/* laptop */}
-          <table className="w-[100%] table-cart sm:hidden md:block">
+          <div className="sxm:hidden md:inline">
+      <table className="w-[100%] table-cart">
             <thead className="bg-[#266bf9] text-white h-[3rem] text-center">
               <tr>
                 <th>Image</th>
@@ -23,7 +24,7 @@ export default function Cart() {
             </thead>
             <tbody>
               <tr>
-                <td className="product-thumbnail sm:w-[75px] sxm:w-[100px] md:w-[150px]">
+                <td className="product-thumbnail sxm:w-[75px] sxm2:w-[100px] md:w-[150px]">
                   <a href="#">
                     <img
                       className="p-[1rem] max-w-[100%] ml-[15px]"
@@ -32,8 +33,8 @@ export default function Cart() {
                     />
                   </a>
                 </td>
-                <td className="product-name sm:text-[.8rem] sxm:-[1rem]">
-                  <a href="#">Modern Smart Phone</a>
+                <td className="product-name sxm:text-[.8rem] sxm2:-[1rem]">
+                  <a href="#">Modern sxmart Phone</a>
                 </td>
                 <td className="product-price-cart  ">
                   <span className="amount">$60.00</span>
@@ -52,12 +53,14 @@ export default function Cart() {
                   </div>
                 </td>
                 <td className="product-subtotal text-red-500">$70.00</td>
-                <td className="product-remove cursor-pointer sm:hidden md:block">
+                <td className="product-remove cursor-pointer sxm:hidden md:block">
                   <FontAwesomeIcon icon={faClose} className="w-4 h-4 m-auto" />
                 </td>
               </tr>
             </tbody>
           </table>
+          </div>
+    
        {/* Mobile */}
        <table className="w-[100%] table-cart md:hidden">
             <thead className="bg-[#266bf9] text-white h-[3rem] text-center">
@@ -71,7 +74,7 @@ export default function Cart() {
             </thead>
             <tbody>
               <tr>
-                <td className="product-thumbnail sm:w-[75px] sxm:w-[100px] md:w-[150px]">
+                <td className="product-thumbnail sxm:w-[75px] sxm2:w-[100px] md:w-[150px]">
                   <a href="#">
                     <img
                       className="p-[1rem] max-w-[100%] ml-[15px]"
@@ -80,8 +83,8 @@ export default function Cart() {
                     />
                   </a>
                 </td>
-                <td className="product-name sm:text-[.8rem] sxm:-[1rem]">
-                  <a href="#">Modern Smart Phone</a>
+                <td className="product-name sxm:text-[.8rem] sxm2:-[1rem]">
+                  <a href="#">Modern sxmart Phone</a>
                 </td>
              
            
@@ -92,14 +95,14 @@ export default function Cart() {
           </table>
           {/* Cart Buttons */}
           <div className="flex justify-between py-[1rem]">
-            <button className="py-[.4rem] sm:px-[1rem] sm:text-[.8rem]  sxm:px-[1.3rem] bg-white border border-[#266bf9] text-[#266bf9] text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">
+            <button className="py-[.4rem] sxm:px-[1rem] sxm:text-[.8rem]  sxm2:px-[1.3rem] bg-white border border-[#266bf9] text-[#266bf9] text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">
               Continue Shopping
             </button>
             <div className="flex gap-[1rem]">
-              <button className="py-[.4rem] sm:hidden md:block px-[1.3rem] border border-[#266bf9] text-[#266bf9] sxm:text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">
+              <button className="py-[.4rem] sxm:hidden md:block px-[1.3rem] border border-[#266bf9] text-[#266bf9] sxm2:text-[1rem] flex justify-center items-center transition-all hover:bg-[#266bf9] hover:text-white">
                 Update Shopping Cart
               </button>
-              <button className="py-[.4rem] sm:px-[1rem] sm:text-[.8rem]  sxm:px-[1.3rem] bg-[#266bf9] text-white sxm:text-[1rem] flex justify-center items-center transition-all hover:bg-[#0055ff]">
+              <button className="py-[.4rem] sxm:px-[1rem] sxm:text-[.8rem]  sxm2:px-[1.3rem] bg-[#266bf9] text-white sxm2:text-[1rem] flex justify-center items-center transition-all hover:bg-[#0055ff]">
                 Clear Shopping Cart
               </button>
             </div>
@@ -107,8 +110,8 @@ export default function Cart() {
         </div>
 
         {/* Cart Total Section */}
-        <div className="xl:w-[35] 2xl:w-[28%]">
-          <div className="cart-tax border border-[#266bf9] shadow-sm bg-white px-[2rem] py-[2rem] text-black">
+        <div className="xl:w-[35%] 2xl:w-[28%]">
+          <div className="cart-tax border border-[#266bf9] shadow-sxm bg-white px-[2rem] py-[2rem] text-black">
             <h4 className="font-semibold text-[1rem]">Cart Total</h4>
             <h5 className="flex py-[1rem] justify-between">
               Total products <span className="font-semibold">$260.00</span>
