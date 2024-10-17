@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const AccountPage = () => {
   const [activeTab, setActiveTab] = useState('DASHBOARD');
-
+// ádasd
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
